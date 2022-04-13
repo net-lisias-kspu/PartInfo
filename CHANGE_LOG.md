@@ -1,5 +1,9 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0703: 0.0.3 (LinuxGuruGamer) for KSP 1.10.0
+	+ Added modname into partinfo output
+	+ Added PartInfo action in editor, to show partinfo for selected part already placed in window
+		- Has button to copy to clipboard
 * 2020-0521: 0.0.2.1 (LinuxGuruGamer) for KSP 1.9.1
 	+ Fixed URL in .version file
 * 2019-1101: 0.0.2 (LinuxGuruGamer) for KSP 1.8.1
