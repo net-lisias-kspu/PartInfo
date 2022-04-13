@@ -1,5 +1,10 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0806: 0.0.3.2 (LinuxGuruGamer) for KSP 1.10.1
+	+ Thanks to user @Gordon-Dry for this:
+		- Do not add ModulePartInfo to ThrottleControlledAvionics "parts" because ThrottleControlledAvionics uses dummy parts for tech tree unlocks of its modules.
+	+ Along the same lines, Breaking Ground's deployable parts are now excluded
+	+ Fixes #3
 * 2020-0711: 0.0.3.1 (LinuxGuruGamer) for KSP 1.10.0
 	+ Fixed typo in Close button
 * 2020-0703: 0.0.3 (LinuxGuruGamer) for KSP 1.10.0
