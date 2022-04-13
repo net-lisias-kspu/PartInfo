@@ -13,8 +13,11 @@
 using System;
 using System.Text.RegularExpressions;
 using System.Text;
+
 using UnityEngine;
-using ClickThroughFix;
+
+using GUI = KSPe.UI.GUI;
+using GUILayout = KSPe.UI.GUILayout;
 
 namespace PartInfo
 {
@@ -34,10 +37,6 @@ namespace PartInfo
 
         private Rect winRect;
         bool isVisible = false;
-
-        StringBuilder sb = new StringBuilder();
-        StringBuilder tmpSb = new StringBuilder();
-        StringBuilder sbPrint = new StringBuilder();
 
         const string MODULENAME = "ModulePartInfo";
 
@@ -114,15 +113,16 @@ namespace PartInfo
                 //winRect.height = (float)(Screen.height * HighLogic.CurrentGame.Parameters.CustomParams<PartInfoSettings>().WindowHeightPercentage + 50);
                 //winRect.width = maxPrintWidth;
 
-                winRect = ClickThruBlocker.GUILayoutWindow((int)part.persistentId, winRect, Window, "Part Information");
+                winRect = GUILayout.Window((int)part.GetInstanceID(), winRect, Window, "Part Information");
             }
         }
 
         void CalcWindowSize()
         {
-            foreach (var m in part.Modules)
+            foreach (PartModule m in part.Modules)
             {
-                var info = m.GetInfo().TrimEnd(' ', '\r', '\n');
+                StringBuilder tmpSb = new StringBuilder();
+                string info = m.GetInfo().TrimEnd(' ', '\r', '\n');
                 info = info.Replace(@"\n", "\n");
                 tmpSb.AppendLine(info);
 
@@ -130,8 +130,6 @@ namespace PartInfo
                 GUIContent tmpContent = new GUIContent(str);
                 Vector2 tmpSize = GUI.skin.textArea.CalcSize(tmpContent);
                 maxPrintWidth = Math.Max(tmpSize.x + 10, maxPrintWidth);
-                tmpSb.Clear();
-
             }
 
         }
@@ -144,7 +142,7 @@ namespace PartInfo
         }
         string GetResourceValues()
         {
-            tmpSb.Clear();
+            StringBuilder tmpSb = new StringBuilder();
             tmpSb.AppendLine(bold + "Mass: " + unbold + FormatMass(part.mass));
 
             if (part.Resources.Count > 0)
@@ -173,15 +171,16 @@ namespace PartInfo
 
             return output;
         }
-        void AddDashedLine()
+        void AddDashedLine(StringBuilder sbPrint)
         {
             sbPrint.AppendLine("-----------------------------------------------");
         }
         void Window(int id)
         {
-            sb.Clear();
-            tmpSb.Clear();
-            sbPrint.Clear();
+            StringBuilder sb = new StringBuilder();
+            StringBuilder tmpSb = new StringBuilder();
+            StringBuilder sbPrint = new StringBuilder();
+
             if (maxPrintWidth == 0)
             {
                 CalcWindowSize();
@@ -190,14 +189,14 @@ namespace PartInfo
             string str = GetInfo().TrimEnd('\r', '\n', ' ');
             str = str.Replace(@"\n", "\n");
 
-                sb.AppendLine(str);
+            sb.AppendLine(str);
             sbPrint.Append(sb);
-            AddDashedLine();
+            AddDashedLine(sbPrint);
 
             string resVal = GetResourceValues();
             sb.Append(tmpSb);
             sbPrint.Append(tmpSb);
-            AddDashedLine();
+            AddDashedLine(sbPrint);
 
             GUILayout.BeginVertical();
 
@@ -240,13 +239,12 @@ namespace PartInfo
             if (showFull)
             {
                 for (int i = 0; i < part.Modules.Count; i++)
-                //foreach (var m in part.Modules)
                 {
-                    var m = part.Modules[i];
+                    PartModule m = part.Modules[i];
                     if (m.moduleName != MODULENAME)
                     {
-                        tmpSb.Clear();
-                        var info = m.GetInfo().TrimEnd(' ', '\r', '\n');
+                        tmpSb = new StringBuilder();
+                        string info = m.GetInfo().TrimEnd(' ', '\r', '\n');
 
                         if (info != null && info != "")
                         {
@@ -260,7 +258,7 @@ namespace PartInfo
                             if (printModule[cnt] || copyAll)
                             {
                                 sbPrint.Append(tmpSb);
-                                AddDashedLine();
+                                AddDashedLine(sbPrint);
                             }
 
                             GUILayout.BeginHorizontal();
@@ -286,13 +284,12 @@ namespace PartInfo
                 printModule = null;
             }
 
-
             GUIContent strContent;
             if (copyAll)
                 strContent = new GUIContent("Copy all to clipboard");
             else
                 strContent = new GUIContent("Copy to clipboard");
-            var size = GUI.skin.button.CalcSize(strContent);
+            Vector2 size = GUI.skin.button.CalcSize(strContent);
 
             if (GUILayout.Button(strContent, GUILayout.Width(size.x + 20)))
             {

@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PartInfo")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Part Info")]
+[assembly: AssemblyDescription("Displays the internal part information in the editor.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PartInfo")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany(PartInfo.LegalMamboJambo.Company)]
+[assembly: AssemblyProduct(PartInfo.LegalMamboJambo.Product)]
+[assembly: AssemblyCopyright(PartInfo.LegalMamboJambo.Copyright)]
+[assembly: AssemblyTrademark(PartInfo.LegalMamboJambo.Trademark)]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -22,6 +22,11 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("adef303a-0a30-4a81-aa3c-b99d06751e90")]
 
+[assembly: AssemblyVersion(PartInfo.Version.Number)]
+[assembly: AssemblyFileVersion(PartInfo.Version.Number)]
+[assembly: KSPAssembly("PartInfo", PartInfo.Version.major, PartInfo.Version.minor)]
+[assembly: KSPAssemblyDependency("KSPe", 2, 4)]
+[assembly: KSPAssemblyDependency("KSPe.UI", 2, 4)]
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
