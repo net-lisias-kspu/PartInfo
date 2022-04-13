@@ -1,5 +1,7 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2021-0407: 0.0.6.1 (LinuxGuruGamer) for KSP 1.11.2
+	+ Added code to deal with embedded character sequence @"\n", found in new ModuleCargoPart
 * 2021-0203: 0.0.6 (LinuxGuruGamer) for KSP 1.11.1
 	+ Fixed CopyAll to enable ALL copy toggles when selected
 	+ Deselecting CopyAll will disable ALL copy toggles
