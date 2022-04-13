@@ -1,5 +1,9 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2021-0125: 0.0.5 (LinuxGuruGamer) for KSP 1.11.0
+	+ Added part size & Bulkhead Profiles
+	+ Added Show Full toggle to show a shorter window
+	+ Added config option to default to large window
 * 2020-0926: 0.0.4.1 (LinuxGuruGamer) for KSP 1.10.1
 	+ Replace html stripper code for better stripping
 * 2020-0920: 0.0.4 (LinuxGuruGamer) for KSP 1.10.1
