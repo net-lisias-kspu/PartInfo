@@ -1,5 +1,10 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2021-0815: 0.0.6.2 (LinuxGuruGamer) for KSP 1.12.2
+	+ Added AssemblyFileVersion
+	+ Updated version file for 1.12
+	+ Thanks to @yalov for this:
+		- Fixed Empty "Part Information" and nullref spam on asteroids in flight
 * 2021-0407: 0.0.6.1 (LinuxGuruGamer) for KSP 1.11.2
 	+ Added code to deal with embedded character sequence @"\n", found in new ModuleCargoPart
 * 2021-0203: 0.0.6 (LinuxGuruGamer) for KSP 1.11.1
