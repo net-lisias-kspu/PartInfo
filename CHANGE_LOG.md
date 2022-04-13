@@ -1,5 +1,7 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0926: 0.0.4.1 (LinuxGuruGamer) for KSP 1.10.1
+	+ Replace html stripper code for better stripping
 * 2020-0920: 0.0.4 (LinuxGuruGamer) for KSP 1.10.1
 	+ Cleaned up output by stripping the markdown
 * 2020-0818: 0.0.3.7 (LinuxGuruGamer) for KSP 1.10.1
