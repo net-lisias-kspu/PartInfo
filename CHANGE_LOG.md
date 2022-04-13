@@ -1,5 +1,11 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0808: 0.0.3.3 (LinuxGuruGamer) for KSP 1.10.1
+	+ Added all part module info to display window
+	+ Added option to have PAW entry available in the flight scene
+	+ Changed output so that if the original part name was the same as the current part name, to only show the name
+	+ Implemented using Stringbuilder to build the display string
+	+ Added ability to copy all or just copy some of the part modules
 * 2020-0806: 0.0.3.2 (LinuxGuruGamer) for KSP 1.10.1
 	+ Thanks to user @Gordon-Dry for this:
 		- Do not add ModulePartInfo to ThrottleControlledAvionics "parts" because ThrottleControlledAvionics uses dummy parts for tech tree unlocks of its modules.
