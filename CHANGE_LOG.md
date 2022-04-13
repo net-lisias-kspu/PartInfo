@@ -1,5 +1,9 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2021-0203: 0.0.6 (LinuxGuruGamer) for KSP 1.11.1
+	+ Fixed CopyAll to enable ALL copy toggles when selected
+	+ Deselecting CopyAll will disable ALL copy toggles
+	+ Disable CopyAll if one or more of the copy toggles is deselected
 * 2021-0125: 0.0.5 (LinuxGuruGamer) for KSP 1.11.0
 	+ Added part size & Bulkhead Profiles
 	+ Added Show Full toggle to show a shorter window
