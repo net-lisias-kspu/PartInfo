@@ -1,5 +1,7 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2019-1101: 0.0.2 (LinuxGuruGamer) for KSP 1.8.1
+	+ Updated for KSP 1.8
 * 2019-0805: 0.0.1.3 (LinuxGuruGamer) for KSP 1.7.3
 	+ Updated assemblyversion.tt
 	+ Added InstallChecker
