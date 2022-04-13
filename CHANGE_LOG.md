@@ -1,5 +1,9 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0815: 0.0.3.6 (LinuxGuruGamer) for KSP 1.10.1
+	+ Added display of resources
+	+ Added alternate skin
+	+ Added resizing of window as percentage of screen height
 * 2020-0815: 0.0.3.5 (LinuxGuruGamer) for KSP 1.10.1
 	+ Fixed modulePartInfo being shown 2x
 * 2020-0808: 0.0.3.4 (LinuxGuruGamer) for KSP 1.10.1
