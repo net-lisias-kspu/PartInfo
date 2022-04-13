@@ -1,5 +1,8 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0808: 0.0.3.4 (LinuxGuruGamer) for KSP 1.10.1
+	+ Fixed missing part info section
+	+ Fixed issue with trying to show windows for more than one part
 * 2020-0808: 0.0.3.3 (LinuxGuruGamer) for KSP 1.10.1
 	+ Added all part module info to display window
 	+ Added option to have PAW entry available in the flight scene
