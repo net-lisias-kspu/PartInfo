@@ -1,3 +1,12 @@
-PartInfo is a simple mod to expose the internal part name and path to the part file.  
+# Part Info /L Unleashed :: Archive
 
-The data shows up in the VAB/SPH when you right-click on a part in the part list
+Displays the internal part information in the editor.
+
+[Unleashed](https://ksp.lisias.net/add-ons-unleashed/) fork by Lisias.
+
+
+## In a Hurry
+
+* [Latest Release](https://github.com/net-lisias-kspu/PartInfo/releases)
+* [Source](https://github.com/net-lisias-kspu/PartInfo)
+* [Change Log](./CHANGE_LOG.md)
