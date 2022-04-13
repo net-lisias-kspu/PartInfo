@@ -1,5 +1,7 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0711: 0.0.3.1 (LinuxGuruGamer) for KSP 1.10.0
+	+ Fixed typo in Close button
 * 2020-0703: 0.0.3 (LinuxGuruGamer) for KSP 1.10.0
 	+ Added modname into partinfo output
 	+ Added PartInfo action in editor, to show partinfo for selected part already placed in window
