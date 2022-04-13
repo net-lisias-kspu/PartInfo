@@ -1,5 +1,7 @@
 # Part Info /L Unleashed :: Change Log
 
+* 2020-0920: 0.0.4 (LinuxGuruGamer) for KSP 1.10.1
+	+ Cleaned up output by stripping the markdown
 * 2020-0818: 0.0.3.7 (LinuxGuruGamer) for KSP 1.10.1
 	+ Added display of mass of part and resources
 * 2020-0815: 0.0.3.6 (LinuxGuruGamer) for KSP 1.10.1
