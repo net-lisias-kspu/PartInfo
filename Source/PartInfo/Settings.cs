@@ -1,13 +1,17 @@
-﻿#if true
+﻿/*
+	This file is part of Part Info /L Unleashed
+		© 2022 LisiasT
+		© 2019-2022 linuxgurugamer
 
-using System;
-using System.IO;
+	Part Info /L is licensed as follows:
+		* CC-BY-NC-SA : https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+	Part Info /L is distributed in the hope that it will
+	be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+	of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*/
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using UnityEngine;
 
 namespace PartInfo
 {
@@ -77,4 +81,3 @@ namespace PartInfo
 
     }
 }
-#endif
